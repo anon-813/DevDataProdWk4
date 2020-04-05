@@ -1,0 +1,42 @@
+---
+title: "Peer-graded Assignment: Course Project: Shiny Application and Reproducible Pitch"
+date: "4/5/2020"
+output: ioslides_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+
+## Introduction: 
+
+I am a baseball fan and this project creates a simple shiny app that allows us to explore the Teams table in Sean Lahman’s Baseball Database.  This presentation is the 'Reproducible Pitch' part of my 'Shiny Application and Reproducible Pitch' course project.  
+ 
+The next few slides will describe how the Shiny App was created.
+
+
+## Finding the Data Set
+
+Lahman's database is well known amongst the baseball community and is thankfully provided in the appropriately named "Lahman" package for R.   There are a variety of tables available in the package, but we will just be using the 'Teams' data, which provides yearly statistics and standings for baseball teams.  </br>
+More information on the data can be found on <a href='http://www.seanlahman.com/baseball-archive/statistics/'>  Lahman's Site </a>
+
+
+## The App
+
+The database includes data from 1871 to 2019.   The first slider that allows us to select only data between any 2 years that we select.  </br>
+
+The app creates a scatter plot based upon the x and y variables that we select.  This plot is displayed on the Plot tab of the app.   </br>
+
+It also creates a histogram for a variable of our choice.   The histogram is displayed on the histogram tab and we can select the number of bins to display. 
+
+
+## Bringing it all together:
+
+Users may find my Shiny App at the following link:
+
+https://anon813.shinyapps.io/LahmanShiny/
+
+
+The code for the ui.R and server.R files and additional documentation can be found at the following GitHub repository link:
+<a href='https://github.com/anon-813/DevDataProdWk4'> https://github.com/anon-813/DevDataProdWk4 </a> 
